@@ -1,0 +1,20 @@
+[package]
+name = "atom_viz"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.29"
+wgpu = "0.20.1"
+pollster = "0.3"
+env_logger = "0.11"
+log = "0.4"
+bytemuck = { version = "1.14", features = ["derive"] }
+glam = "0.25"
+egui = "0.28"
+egui-wgpu = "0.28"
+egui-winit = "0.28"
+atom_core = { path = "../atom_core" }
+atom_physics = { path = "../atom_physics" }
+image = "0.25"
+chrono = "0.4"

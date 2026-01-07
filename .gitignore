@@ -1,0 +1,9 @@
+
+/target
+**/*.rs.bk
+*.pdb
+*.xyz
+!1crn.pdb
+!rcsb_pdb_9RE1.fasta.xyz
+.DS_Store
+.venv/

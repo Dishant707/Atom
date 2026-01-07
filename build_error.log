@@ -1,0 +1,196 @@
+warning: unused variable: `base_coords`
+   --> crates/atom_core/src/potential.rs:107:13
+    |
+107 | ...et base_coords = ...
+    |       ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_base_coords`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `start_step` and `interval` are never read
+  --> crates/atom_core/src/dcd.rs:9:5
+   |
+ 5 | pub struct DCDWriter<W:...
+   |            --------- fields in this struct
+...
+ 9 |     start_step: u32,
+   |     ^^^^^^^^^^
+10 |     interval: u32,
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable `new_Z` should have a snake case name
+   --> crates/atom_core/src/lib.rs:138:17
+    |
+138 | ...ut new_Z = Vec:...
+    |       ^^^^^ help: convert the identifier to snake case (notice the capitalization): `new_z`
+    |
+    = note: `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default
+
+warning: `atom_core` (lib) generated 3 warnings (run `cargo fix --lib -p atom_core` to apply 1 suggestion)
+warning: unused import: `glam::Vec3`
+ --> crates/atom_physics/src/hybrid.rs:3:5
+  |
+3 | use glam::Vec3;
+  |     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `qm_set`
+   --> crates/atom_physics/src/ani.rs:121:13
+    |
+121 | ...et qm_set: Hash...
+    |       ^^^^^^ help: if this is intentional, prefix it with an underscore: `_qm_set`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `shape`
+   --> crates/atom_physics/src/ani.rs:348:28
+    |
+348 | ...k((shape, flat_...
+    |       ^^^^^ help: if this is intentional, prefix it with an underscore: `_shape`
+
+warning: unused variable: `rep_force_updates`
+   --> crates/atom_physics/src/ani.rs:411:13
+    |
+411 | ...et rep_force_updates: V...
+    |       ^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_rep_force_updates`
+
+warning: variable `dE_dAEV` should have a snake case name
+   --> crates/atom_physics/src/ani.rs:195:29
+    |
+195 | ...me(dE_dAEV) = n...
+    |       ^^^^^^^ help: convert the identifier to snake case: `d_e_d_aev`
+    |
+    = note: `#[warn(non_snake_case)]` (part of `#[warn(nonstandard_style)]`) on by default
+
+warning: variable `dE_dA` should have a snake case name
+   --> crates/atom_physics/src/ani.rs:200:31
+    |
+200 | ..., &dE_dA) in dE...
+    |       ^^^^^ help: convert the identifier to snake case: `d_e_d_a`
+
+warning: variable `dE_dAEV` should have a snake case name
+   --> crates/atom_physics/src/ani.rs:376:33
+    |
+376 | ...me(dE_dAEV) = &...
+    |       ^^^^^^^ help: convert the identifier to snake case: `d_e_d_aev`
+
+warning: variable `dE_dA` should have a snake case name
+   --> crates/atom_physics/src/ani.rs:377:35
+    |
+377 | ..., &dE_dA) in dE...
+    |       ^^^^^ help: convert the identifier to snake case: `d_e_d_a`
+
+warning: variable `MAX_FORCE` should have a snake case name
+   --> crates/atom_physics/src/ani.rs:395:13
+    |
+395 | ...et MAX_FORCE = ...
+    |       ^^^^^^^^^ help: convert the identifier to snake case: `max_force`
+
+warning: `atom_physics` (lib) generated 9 warnings (run `cargo fix --lib -p atom_physics` to apply 4 suggestions)
+   Compiling atom_viz v0.1.0 (/Users/dishant/Desktop/Atom/crates/atom_viz)
+warning: unnecessary parentheses around assigned value
+   --> crates/atom_viz/src/lib.rs:255:20
+    |
+255 |         let top2 = (i * 2 + 2);
+    |                    ^         ^
+    |
+    = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+help: remove these parentheses
+    |
+255 -         let top2 = (i * 2 + 2);
+255 +         let top2 = i * 2 + 2 ;
+    |
+
+warning: unnecessary parentheses around assigned value
+   --> crates/atom_viz/src/lib.rs:256:23
+    |
+256 |         let bottom2 = (i * 2 + 3);
+    |                       ^         ^
+    |
+help: remove these parentheses
+    |
+256 -         let bottom2 = (i * 2 + 3);
+256 +         let bottom2 = i * 2 + 3 ;
+    |
+
+error[E0308]: mismatched types
+    --> crates/atom_viz/src/lib.rs:1731:24
+     |
+1731 |                 color: [1.0, 1.0, 1.0, 1.0],
+     |                        ^^^^^^^^^^^^^^^^^^^^ expected an array with a size of 3, found one with a size of 4
+
+warning: unused variable: `position`
+   --> crates/atom_viz/src/camera.rs:102:40
+    |
+102 |             WindowEvent::CursorMoved { position, .. } => {
+    |                                        ^^^^^^^^ help: try ignoring the field: `position: _`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `delta`
+   --> crates/atom_viz/src/camera.rs:115:40
+    |
+115 |             DeviceEvent::MouseMotion { delta } => {
+    |                                        ^^^^^ help: try ignoring the field: `delta: _`
+
+warning: unused variable: `delta`
+   --> crates/atom_viz/src/camera.rs:124:39
+    |
+124 |             DeviceEvent::MouseWheel { delta } => {
+    |                                       ^^^^^ help: try ignoring the field: `delta: _`
+
+warning: variable does not need to be mutable
+  --> crates/atom_viz/src/mesh.rs:84:17
+   |
+84 |             let mut right = tangent.cross(up_guess).normalize();
+   |                 ----^^^^^
+   |                 |
+   |                 help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> crates/atom_viz/src/mesh.rs:85:17
+   |
+85 |             let mut up = right.cross(tangent).normalize();
+   |                 ----^^
+   |                 |
+   |                 help: remove this `mut`
+
+warning: unused variable: `axis`
+  --> crates/atom_viz/src/mesh.rs:91:22
+   |
+91 |                  let axis = prev_normal.cross(up); // Rotation axis to align? 
+   |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_axis`
+
+warning: unused variable: `prev_ring_start`
+   --> crates/atom_viz/src/mesh.rs:120:21
+    |
+120 |                 let prev_ring_start = start_v_idx - ring_size;
+    |                     ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_prev_ring_start`
+
+warning: variable does not need to be mutable
+    --> crates/atom_viz/src/lib.rs:1175:17
+     |
+1175 |             let mut flush_chain = |pos: &[glam::Vec3], str: &[atom_core::SecondaryStructure], cols: &[glam::Vec3], 
+     |                 ----^^^^^^^^^^^
+     |                 |
+     |                 help: remove this `mut`
+
+warning: unused variable: `output`
+    --> crates/atom_viz/src/lib.rs:1497:31
+     |
+1497 |         let convert_output = |output: egui::PlatformOutput| {
+     |                               ^^^^^^ help: if this is intentional, prefix it with an underscore: `_output`
+
+warning: unused variable: `convert_output`
+    --> crates/atom_viz/src/lib.rs:1497:13
+     |
+1497 |         let convert_output = |output: egui::PlatformOutput| {
+     |             ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_convert_output`
+
+For more information about this error, try `rustc --explain E0308`.
+warning: `atom_viz` (lib) generated 12 warnings
+error: could not compile `atom_viz` (lib) due to 1 previous error; 12 warnings emitted

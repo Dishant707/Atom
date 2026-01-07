@@ -1,0 +1,17 @@
+Loading /Users/dishant/Desktop/Atom/ani2xr.pt...
+
+--- Repulsion Y_ab ---
+Shape: torch.Size([7, 7])
+Data: [np.float32(1.2218827), np.float32(4.6769834), np.float32(5.7950983), np.float32(6.394023), np.float32(7.7614665), np.float32(16.575392), np.float32(19.181948), np.float32(4.6769834), np.float32(17.902021), np.float32(22.181816), np.float32(24.474312), np.float32(29.708456), np.float32(63.445396), np.float32(73.42247), np.float32(5.7950983), np.float32(22.181816), np.float32(27.48477), np.float32(30.325325), np.float32(36.810783), np.float32(78.61314), np.float32(90.9754), np.float32(6.394023), np.float32(24.474312), np.float32(30.325325), np.float32(33.459454), np.float32(40.615185), np.float32(86.737816), np.float32(100.37772), np.float32(7.7614665), np.float32(29.708456), np.float32(36.810783), np.float32(40.615185), np.float32(49.30126), np.float32(105.28781), np.float32(121.84479), np.float32(16.575392), np.float32(63.445396), np.float32(78.61314), np.float32(86.737816), np.float32(105.28781), np.float32(224.8527), np.float32(260.2118), np.float32(19.181948), np.float32(73.42247), np.float32(90.9754), np.float32(100.37772), np.float32(121.84479), np.float32(260.2118), np.float32(301.13126)]
+
+--- Repulsion SqrtAlpha_ab ---
+Shape: torch.Size([7, 7])
+Data: [np.float32(2.213717), np.float32(1.661913), np.float32(1.9300251), np.float32(2.189583), np.float32(2.3152282), np.float32(1.6397184), np.float32(1.8685156), np.float32(1.661913), np.float32(1.247655), np.float32(1.4489359), np.float32(1.6437949), np.float32(1.738121), np.float32(1.2309928), np.float32(1.4027586), np.float32(1.9300251), np.float32(1.4489359), np.float32(1.682689), np.float32(1.908984), np.float32(2.0185275), np.float32(1.4295856), np.float32(1.6290619), np.float32(2.189583), np.float32(1.6437949), np.float32(1.908984), np.float32(2.165712), np.float32(2.2899873), np.float32(1.6218421), np.float32(1.848145), np.float32(2.3152282), np.float32(1.738121), np.float32(2.0185275), np.float32(2.2899873), np.float32(2.421394), np.float32(1.7149086), np.float32(1.9541973), np.float32(1.6397184), np.float32(1.2309928), np.float32(1.4295856), np.float32(1.6218421), np.float32(1.7149086), np.float32(1.214553), np.float32(1.3840249), np.float32(1.8685156), np.float32(1.4027586), np.float32(1.6290619), np.float32(1.848145), np.float32(1.9541973), np.float32(1.3840249), np.float32(1.577144)]
+
+--- Repulsion K_rep_ab ---
+Shape: torch.Size([7, 7])
+Data: [np.float32(1.0), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5), np.float32(1.5)]
+
+--- Atomic Numbers ---
+Shape: torch.Size([7])
+Data: [np.int64(1), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(16), np.int64(17)]

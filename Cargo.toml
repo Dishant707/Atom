@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "crates/atom_core",
+    "crates/atom_viz",
+    "crates/atom_physics",
+    "crates/atom_ai",
+]
+resolver = "2"

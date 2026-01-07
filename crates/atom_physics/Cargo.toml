@@ -1,0 +1,13 @@
+[package]
+name = "atom_physics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+glam = "0.25"
+atom_core = { path = "../atom_core" }
+log = "0.4"
+anyhow = "1.0"
+ort = { version = "2.0.0-rc.2", features = ["load-dynamic", "ndarray", "download-binaries"] } # Auto-download libonnxruntime
+ndarray = "0.16"
+rayon = "1.11.0"
